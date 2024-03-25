@@ -1,0 +1,74 @@
+
+#container {
+    background-image: url("../img/background_index.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+#beginner_plants {
+    background-image: url("../img/background_beginner_plants.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+#beginner_zombies {
+    background-image: url("../img/background_beginner_zombies.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+#legal_terms {
+    background-image: url("../img/background_legal_terms.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+#the_three_main_worlds {
+    background-image: url("../img/background_the_three_main_worlds.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-gallery > li {
+    flex-basis: 450px; /* width: 350px; */
+}
+
+.image-gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.image-gallery-grid {
+    display: grid;
+    grid-gap: 5px;
+}
+
+.gallery-item-image-big {
+    height: 250px;
+    width: 250px;
+}
+
+.image-gallery-grid-small img {
+    height: 100px;
+    width: 100px;
+}
+
+
+.three-cols-gallery {
+    grid-template-columns: repeat(3, 400px);
+}   
+
+.bg-body-tertiary {
+    background-color: #b45f06!important;
+}
