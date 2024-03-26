@@ -102,3 +102,7 @@
 .bg-body-tertiary {
     background-color: #b45f06!important;
 }
+
+ul {
+    list-style-type: none;
+}
