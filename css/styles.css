@@ -1,29 +1,29 @@
 #container {
-    background-image: url("../img/background_index.png");
+    background-image: url("./../img/background_index.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 100vh;
 }
 #beginner_plants {
-    background-image: url("../img/background_beginner_plants.jpeg");
+    background-image: url("./../img/background_beginner_plants.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 100vh;
 }
 #beginner_zombies {
-    background-image: url("../img/background_beginner_zombies.jpeg");
+    background-image: url("./../img/background_beginner_zombies.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 100vh;
 }
 #legal_terms {
-    background-image: url("../img/background_legal_terms.png");
+    background-image: url("./../img/background_legal_terms.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 100vh;
 }
 #the_three_main_worlds {
-    background-image: url("../img/background_the_three_main_worlds.jpeg");
+    background-image: url("./../img/background_the_three_main_worlds.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 100vh;
