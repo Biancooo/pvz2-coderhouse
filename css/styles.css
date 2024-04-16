@@ -4,24 +4,28 @@
     background-size: 100% 100%;
     min-height: 100vh;
 }
+
 #beginner_plants {
     background-image: url("./../img/background_beginner_plants.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 100vh;
 }
+
 #beginner_zombies {
     background-image: url("./../img/background_beginner_zombies.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 100vh;
 }
+
 #legal_terms {
     background-image: url("./../img/background_legal_terms.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 100vh;
 }
+
 #the_three_main_worlds {
     background-image: url("./../img/background_the_three_main_worlds.jpeg");
     background-repeat: no-repeat;
@@ -34,64 +38,68 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-}
 
-.image-gallery > li {
-    flex-basis: 350px; /* width: 350px; */
-}
+    > li {
+    flex-basis: 350px;
 
-.image-gallery li img {
+      /* width: 350px; */
+    }
+
+    li img {
     object-fit: cover;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
     border-radius: 5px;
+    }
 }
 
 @media all and (min-width: 320px) {
     .image-gallery {
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media all and (min-width: 768px) {
     .image-gallery {
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media all and (min-width: 1024px) {
     .image-gallery {
-        grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     }
 }
 
-.gallery-item-image:nth-child(11n+1) {
-    grid-column: span 1;    
-}
+.gallery-item-image {
+    &:nth-child(11n+1) {
+    grid-column: span 1;
+    }
 
-.gallery-item-image:nth-child(11n+4) {
+    &:nth-child(11n+4) {
     grid-column: span 2;
     grid-row: span 1;
-}
+    }
 
-.gallery-item-image:nth-child(11n+6) {
+    &:nth-child(11n+6) {
     grid-column: span 3;
     grid-row: span 1;
-}
+    }
 
-.gallery-item-image:nth-child(11n+7) {
+    &:nth-child(11n+7) {
     grid-column: span 1;
     grid-row: span 2;
-}
+    }
 
-.gallery-item-image:nth-child(11n+8) {
+    &:nth-child(11n+8) {
     grid-column: span 2;
     grid-row: span 2;
-}
+    }
 
-.gallery-item-image:nth-child(11n+9) {
+    &:nth-child(11n+9) {
     grid-row: span 3;
+    }
 }
 
 .gallery-item-image-big {
@@ -100,7 +108,7 @@
 }
 
 .bg-body-tertiary {
-    background-color: #b45f06!important;
+    background-color: #b45f06 !important;
 }
 
 ul {
