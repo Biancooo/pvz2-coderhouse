@@ -1,0 +1,116 @@
+@import "gallery";
+
+$background-color_1: #b45f06;
+$grayscale: [];
+$grayscale: map-merge(
+    (
+    "100": #EEF1F4,
+    "200": #DFE3E7,
+    "300": #CBCFD2,
+    "400": #B3B6B9,
+    "500": #9CA0A3,
+    "600": #7C7F82,
+    "700": #606365,
+    "800": #4A4C4F,
+    "900": #333536,
+    ),
+    $grayscale
+);
+
+body {
+    color: map-get($grayscale, 900);
+}
+
+@mixin default-background {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	min-height: 100vh;
+}
+
+#container {
+    @include default-background;
+	background-image: url("./../img/background_index.png");
+}
+#beginner_plants {
+    @include default-background;
+	background-image: url("./../img/background_beginner_plants.jpeg");
+}
+#beginner_zombies {
+    @include default-background;
+	background-image: url("./../img/background_beginner_zombies.jpeg");
+}
+#legal_terms {
+    @include default-background;
+	background-image: url("./../img/background_legal_terms.png");
+}
+#the_three_main_worlds {
+    @include default-background;
+	background-image: url("./../img/background_the_three_main_worlds.jpeg");
+}
+.image-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	>li {
+		flex-basis: 350px;
+	}
+	li {
+		img {
+			object-fit: cover;
+			max-width: 100%;
+			height: auto;
+			vertical-align: middle;
+			border-radius: 5px;
+		}
+	}
+}
+.gallery-item-image {
+	&:nth-child(11n+1) {
+		grid-column: span 1;
+	}
+	&:nth-child(11n+4) {
+		grid-column: span 2;
+		grid-row: span 1;
+	}
+	&:nth-child(11n+6) {
+		grid-column: span 3;
+		grid-row: span 1;
+	}
+	&:nth-child(11n+7) {
+		grid-column: span 1;
+		grid-row: span 2;
+	}
+	&:nth-child(11n+8) {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+	&:nth-child(11n+9) {
+		grid-row: span 3;
+	}
+}
+.gallery-item-image-big {
+	height: 250px;
+	width: 250px;
+}
+.bg-body-tertiary {
+	background-color: $background-color_1 !important;
+}
+ul {
+	list-style-type: none;
+}
+@media (min-width: 320px) {
+	.image-gallery {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media (min-width: 768px) {
+	.image-gallery {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (min-width: 1024px) {
+	.image-gallery {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
